@@ -7,7 +7,7 @@
 }
 
 .logo {
-  width: 150px;
+  width: 15rem;
   padding: 10px 20px 20px 20px;
 }
 
@@ -227,52 +227,51 @@
 
 /* Carousel */
 
-.brands-carousel {
-  display: flex;
-  gap: 20px;
-
-  overflow-x: auto;
-  scroll-behavior: smooth;
-
-  padding-bottom: 10px;
+.slideshow {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Hide scrollbar */
-
-.brands-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.brands-carousel::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
-}
-
-/* Brand Cards */
-
-.brand-card {
-  min-width: 220px;
-  height: 140px;
-  background: white;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: 4px 12px rgb(17, 17, 17);
-  transition: 0.3s ease;
-  flex-shrink: 0;
-}
-
-.brand-card:hover {
-  transform: translateY(-5px);
-}
-
-.brand-card img {
+.slideshow img {
   width: 100%;
-  max-width: 140px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
+
+.button {
+  height: 5px;
+  width: 5px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:hover {
+  border: none;
+  background: none;
+  color: none;
+}
+
+.button img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  font-size: 10px;
+}
+
+.button:first-of-type {
+  left: 5px;
+}
+
+.button:last-of-type {
+  right: 5px;
+}
+
+
 
 /* Quote Section Styles */
 
@@ -366,6 +365,29 @@ button:hover {
   background: #242424;
   text-decoration: underline;
   border: 2px solid #ffffff;
+}
+
+mat-form-field {
+  width: 250px;
+}
+
+.mat-mdc-select-panel {
+  border-radius: 12px;
+}
+
+.mat-mdc-option:hover {
+  background: #f5f5f5;
+}
+
+.mat-mdc-option.mdc-list-item--selected {
+  background: #e0e0e0;
+}
+mat-form-field {
+  width: 100%;
+}
+
+.mat-mdc-select-panel {
+  border-radius: 12px;
 }
 
 /* Contact Section Styles */

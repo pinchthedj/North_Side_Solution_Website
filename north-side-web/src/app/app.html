@@ -93,7 +93,7 @@
 
       <div class="service-card">
 
-       <div class="service-icon">
+        <div class="service-icon">
           <img src="/assets/mobile_development.png" alt="Mobile Development Icon" width="55">
         </div>
 
@@ -107,7 +107,7 @@
 
       <div class="service-card">
 
-       <div class="service-icon">
+        <div class="service-icon">
           <img src="/assets/ux_ui.png" alt="UI/UX Design Icon" width="55">
         </div>
         <h2>UI/UX Design</h2>
@@ -142,12 +142,21 @@
 
     <div class="section-header">
       <h1>Our Partner Brands</h1>
-
       <p>
         We proudly collaborate with trusted brands and companies
         across multiple industries.
       </p>
+    </div>
 
+    <div class="slideshow">
+      <img [src]="images[currentIndex]" [alt]="imageAlt[currentIndex]" />
+
+      <button class="button" (click)="prev()">
+        <img src="/assets/arrowCopy.png" alt="Previous">
+      </button>
+      <button class="button" (click)="next()">
+        <img src="/assets/arrow.png" alt="Next">
+      </button>
     </div>
 
   </section>
@@ -178,15 +187,18 @@
         </div>
 
         <div class="form-group">
-          <label>Service</label>
+          <mat-form-field appearance="outline">
+            <mat-label>Service</mat-label>
+            <mat-select [(ngModel)]="selectedService" name="service">
+              @foreach (service of services; track service){
+              <mat-option value="service">
+                {{ service }}
+              </mat-option>
+              }
+            </mat-select>
 
-          <select>
-            <option>Select a service</option>
-            <option>Web Development</option>
-            <option>Mobile App</option>
-            <option>UI/UX Design</option>
-            <option>IT Support</option>
-          </select>
+          </mat-form-field>
+
         </div>
 
         <div class="form-group">
@@ -236,6 +248,9 @@
             <h3>Location</h3>
             <p>Pretoira, South Africa</p>
           </td>
+        </tr>
+        <tr>
+          <img src="/assets/Dark_Mode_Full_Logo_NSS-removebg-preview.png" alt="Logo" class="logo">
         </tr>
       </table>
     </div>

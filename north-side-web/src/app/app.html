@@ -1,0 +1,138 @@
+<div class="ict-container">
+  <!-- Brand Header -->
+  <header class="main-header">
+    <img src="/assets/Dark_Mode_Full_Logo_NSS-removebg-preview.png" alt="Northside Solutions Logo" class="logo">
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- About Section -->
+    <section class="about-section">
+      <span class="badge">
+        <h2>
+          About Northside Solutions
+        </h2>
+      </span>
+      <br>
+      <div class=" about-grid">
+        <div class="text-content">
+
+          <p class="intro">
+            Building modern digital experiences that are simple, reliable, and user-friendly.
+          </p>
+          <p>
+            Our mission is to empower businesses through innovative technology solutions,
+            bridging the gap between complex infrastructure and seamless user experiences.
+          </p>
+
+          <div class="mini-cards">
+            <div class="m-card glass-panel">
+
+              <h3>Mission</h3>
+              <p>Scalable tech for growth.</p>
+            </div>
+            <div class="m-card glass-panel">
+              <h3>Vision</h3>
+              <p>The global ICT partner.</p>
+            </div>
+            <div class="m-card glass-panel">
+              <h3>Values</h3>
+              <p>Growth & Transparency.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1604933762161-67313106146c?auto=format&fit=crop&w=800"
+            alt="ICT Infrastructure">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="section-title">
+        <h2>Our Tech Stack & Services</h2>
+        <p>Future-proof solutions for a digital-first world.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="icon-blob"><img src="/assets/web_development.png" alt="Web"></div>
+          <h3>Web Systems</h3>
+          <p>High-performance, scalable web architectures built for speed.</p>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="icon-blob"><img src="/assets/mobile_development.png" alt="Mobile"></div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform solutions for a mobile-first world.</p>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="icon-blob"><img src="/assets/ux_ui.png" alt="UI/UX"></div>
+          <h3>UI/UX Design</h3>
+          <p>Intuitive interfaces designed to maximize user engagement.</p>
+        </div>
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="icon-blob"><img src="/assets/it_support.png" alt="IT"></div>
+          <h3>IT Support</h3>
+          <p>24/7 technical oversight and infrastructure maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+      <div class="section-title">
+        <h2>Partner Ecosystem</h2>
+      </div>
+      <div class="slideshow-container glass-panel">
+
+        <button (click)="prev()" class="nav-btn">⇦</button>
+        <img [src]="images[currentIndex]" [alt]="imageAlt[currentIndex]" class="partner-img">
+        <button (click)="next()" class="nav-btn">➪</button>
+
+      </div>
+    </section>
+
+    <!-- Quote & Contact Container -->
+    <div class="bottom-grid">
+      <!-- Quote Form -->
+      <section class="quote-container glass-panel">
+        <h3>Initiate Project</h3>
+        <form class="quote-form">
+          <div class="input-row">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+          </div>
+          <input type="text" placeholder="Estimated Budget (e.g., R10,000)">
+          <textarea rows="4" placeholder="Briefly describe your project goals..."></textarea>
+
+          <button type="submit" class="cta-button">Send Request</button>
+        </form>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info">
+        <h3>Get In Touch</h3>
+        <div class="info-item">
+          <label>Location</label>
+          <p>Pretoria, South Africa</p>
+        </div>
+        <div class="info-item">
+          <label>Direct Line</label>
+          <p>+27 67 408 4187</p>
+        </div>
+        <div class="info-item">
+          <label>Email</label>
+          <p>info@northsidesolutions.co.za</p>
+        </div>
+
+        <img src="/assets/Dark_Mode_Full_Logo_NSS-removebg-preview.png" alt="Logo" class="footer-logo">
+      </section>
+    </div>
+
+  </main>
+</div>
